@@ -1,16 +1,12 @@
-language: node_js
-node_js:
--11.6.0
-cache: yarn
-install: 
--yarn install
-scripts: 
--yarn test
--yarn run build
-
-deploy:
-provider: pages
-skip-cleanup: true
-github-token: $GITHUB_TOKEN
-on:
+--- 
 branch: master
+cache: yarn
+deploy: ~
+github-token: $GITHUB_TOKEN
+install: "-yarn install"
+language: node_js
+node_js: "-11.6.0"
+provider: pages
+scripts: "-yarn test, -yarn run build"
+skip-cleanup: true
+true: ~
