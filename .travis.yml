@@ -3,10 +3,10 @@ branch: master
 cache: yarn
 deploy: ~
 github-token: $GITHUB_TOKEN
-install: -yarn install
+install: yarn install
 language: node_js
 node_js: 11.6.0
-provider: pages
+provider: npm
 scripts: yarn test, yarn run build
 skip-cleanup: true
 true: ~
