@@ -5,7 +5,7 @@ deploy: ~
 github-token: $GITHUB_TOKEN
 install: "-yarn install"
 language: node_js
-node_js: "-11.6.0"
+node_js: 11.6.0
 provider: pages
 scripts: "-yarn test, -yarn run build"
 skip-cleanup: true
