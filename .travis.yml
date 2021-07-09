@@ -3,7 +3,7 @@ branch: master
 cache: yarn
 deploy: ~
 github-token: $GITHUB_TOKEN
-install: yarn install
+install: yarn install --frozen-lockfile
 language: node_js
 node_js: 11.6.0
 provider: npm
